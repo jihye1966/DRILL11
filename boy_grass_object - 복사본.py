@@ -63,6 +63,7 @@ class SmallBall:
         self.x = random.randint(0,800)
         self.y = 21
         self.image = load_image('ball21x21 - 복사본.png')
+        self.speed = random.randiant(1,10)
 
     
     def update(self):
@@ -76,6 +77,7 @@ class BigBall:
         self.x = random.randint(0,800)
         self.y = 41
         self.image = load_image('ball41x41 - 복사본.png')
+        self.speed = random.randiant(1,10)
 
     
     def update(self):
