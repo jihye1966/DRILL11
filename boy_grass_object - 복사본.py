@@ -112,6 +112,9 @@ def reset_world():
     zombie = Zombie()
     world.append(zombie)
 
+    smallBallsCount = random.randint(1,20)
+    bigBallsCount = 20 - smallBallsCount
+
 
 def update_world():
     for o in world:
