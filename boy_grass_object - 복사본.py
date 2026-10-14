@@ -62,12 +62,23 @@ class SmallBall:
     def __init__(self):
         pass
 
-    
     def update(self):
         pass
     
     def draw(self):
         pass
+
+class BigBall:
+    def __init__(self):
+        pass
+
+    def update(self):
+        pass
+    
+    def draw(self):
+        pass
+
+
 
 def reset_world():
     global running, world
