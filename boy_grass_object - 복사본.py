@@ -60,6 +60,7 @@ class Zombie:
 
 class SmallBall:
     def __init__(self):
+        self.x = random.randint(0,800)
         pass
 
     def update(self):
@@ -70,6 +71,7 @@ class SmallBall:
 
 class BigBall:
     def __init__(self):
+        
         pass
 
     def update(self):
