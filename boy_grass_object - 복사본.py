@@ -72,7 +72,7 @@ class SmallBall:
 
 class BigBall:
     def __init__(self):
-        
+        self.x = random.randint(0,800)
         pass
 
     def update(self):
@@ -80,7 +80,6 @@ class BigBall:
     
     def draw(self):
         pass
-
 
 
 def reset_world():
