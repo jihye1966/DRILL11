@@ -75,7 +75,7 @@ class SmallBall:
             self.speed = -self.speed
     
     def draw(self):
-        pass
+        self.image.draw(self.x, self.y)
 
 class BigBall:
     def __init__(self):
@@ -94,7 +94,7 @@ class BigBall:
             self.speed = -self.speed
     
     def draw(self):
-        pass
+        self.image.draw(self.x, self.y)
 
 
 def reset_world():
