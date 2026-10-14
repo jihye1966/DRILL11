@@ -62,8 +62,9 @@ class SmallBall:
     def __init__(self):
         self.x = random.randint(0,800)
         self.y = 21
-        pass
+        self.image = load_image('ball21x21 - 복사본.png')
 
+    
     def update(self):
         pass
     
@@ -74,8 +75,9 @@ class BigBall:
     def __init__(self):
         self.x = random.randint(0,800)
         self.y = 41
-        pass
+        self.image = load_image('ball41x41 - 복사본.png')
 
+    
     def update(self):
         pass
     
