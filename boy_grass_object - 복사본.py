@@ -86,7 +86,8 @@ class BigBall:
 
     
     def update(self):
-        pass
+        self.y += 5
+
     
     def draw(self):
         pass
