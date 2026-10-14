@@ -115,6 +115,11 @@ def reset_world():
     smallBallsCount = random.randint(1,20)
     bigBallsCount = 20 - smallBallsCount
 
+    smallBalls = [SmallBall() for _ in range(smallBallsCount)]
+    world += smallBalls
+
+
+
 
 def update_world():
     for o in world:
