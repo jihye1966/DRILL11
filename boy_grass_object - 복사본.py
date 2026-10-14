@@ -69,6 +69,11 @@ class SmallBall:
     def update(self):
         self.y += 5
     
+        if self.y > 578:
+            self.speed = -self.speed
+        elif self.y < 500:
+            self.speed = -self.speed
+    
     def draw(self):
         pass
 
