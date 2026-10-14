@@ -68,10 +68,13 @@ class SmallBall:
     def update(self):
         self.y += self.speed
     
-        if self.y >= 578:
+        if self.y >= 590:
+            self.y = 590
             self.speed = -self.speed
         elif self.y <= 500:
-            self.speed = -self.speed
+            if self.speed < 0:
+                self.y = 500
+                self.speed = -self.speed
     
     def draw(self):
         self.image.draw(self.x, self.y)
@@ -87,10 +90,13 @@ class BigBall:
     def update(self):
         self.y += self.speed
 
-        if self.y >= 558:
+        if self.y >= 570:
+            self.y = 570
             self.speed = -self.speed
-        elif self.y <= 500:
-            self.speed = -self.speed
+        elif self.y < 500:
+            if self.speed < 0:
+                self.y = 500
+                self.speed = -self.speed
     
     def draw(self):
         self.image.draw(self.x, self.y)
