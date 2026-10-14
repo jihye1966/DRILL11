@@ -73,6 +73,7 @@ class SmallBall:
 class BigBall:
     def __init__(self):
         self.x = random.randint(0,800)
+        self.y = 41
         pass
 
     def update(self):
