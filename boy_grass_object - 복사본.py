@@ -61,6 +61,7 @@ class Zombie:
 class SmallBall:
     def __init__(self):
         self.x = random.randint(0,800)
+        self.y = 21
         pass
 
     def update(self):
