@@ -88,6 +88,10 @@ class BigBall:
     def update(self):
         self.y += 5
 
+        if self.y > 558:
+            self.speed = -self.speed
+        elif self.y < 500:
+            self.speed = -self.speed
     
     def draw(self):
         pass
