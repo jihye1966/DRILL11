@@ -4,7 +4,7 @@ import random
 
 class Grass:
     def __init__(self):
-        self.image = load_image('grass.png')
+        self.image = load_image('grass - 복사본.png')
 
     def update(self):
         pass
@@ -17,7 +17,7 @@ class Boy:
     def __init__(self):
         self.x = random.randint(100, 700)
         self.y = 90
-        self.image = load_image('run_animation.png')
+        self.image = load_image('run_animation - 복사본.png')
         self.frame = random.randint(0, 7)
 
     def update(self):
@@ -38,7 +38,7 @@ class Zombie:
     def __init__(self):
         self.x, self.y = 100, 170
         self.frame = 0
-        self.image = load_image('zombie_run_animation.png')
+        self.image = load_image('zombie_run_animation - 복사본.png')
 
     def update(self):
         self.frame = (self.frame + 1) % 10
@@ -63,15 +63,14 @@ class SmallBall:
         self.x = random.randint(0,800)
         self.y = 21
         self.image = load_image('ball21x21 - 복사본.png')
-        self.speed = random.randiant(1,10)
-
+        self.speed = random.randint(1,10)
     
     def update(self):
-        self.y += 5
+        self.y += self.speed
     
-        if self.y > 578:
+        if self.y >= 578:
             self.speed = -self.speed
-        elif self.y < 500:
+        elif self.y <= 500:
             self.speed = -self.speed
     
     def draw(self):
@@ -82,15 +81,15 @@ class BigBall:
         self.x = random.randint(0,800)
         self.y = 41
         self.image = load_image('ball41x41 - 복사본.png')
-        self.speed = random.randiant(1,10)
+        self.speed = random.randint(1,10)
 
     
     def update(self):
-        self.y += 5
+        self.y += self.speed
 
-        if self.y > 558:
+        if self.y >= 558:
             self.speed = -self.speed
-        elif self.y < 500:
+        elif self.y <= 500:
             self.speed = -self.speed
     
     def draw(self):
@@ -118,7 +117,8 @@ def reset_world():
     smallBalls = [SmallBall() for _ in range(smallBallsCount)]
     world += smallBalls
 
-
+    bigBalls = [BigBall() for _ in range(bigBallsCount)]
+    world += bigBalls
 
 
 def update_world():
